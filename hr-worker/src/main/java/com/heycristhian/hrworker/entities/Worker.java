@@ -23,7 +23,7 @@ public class Worker implements Serializable{
 	@Deprecated
 	public Worker() {}
 	
-	public Worker(WorkerBuilder builder) {
+	private Worker(WorkerBuilder builder) {
 		this.id = builder.id;
 		this.name = builder.name;
 		this.dailyIncome = builder.dailyIncome;
