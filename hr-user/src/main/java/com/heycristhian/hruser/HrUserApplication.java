@@ -26,7 +26,7 @@ public class HrUserApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		// logger.info("BCRYPT = " + passwordEncoder.encode("123456789"));
+		 logger.info("BCRYPT = " + passwordEncoder.encode("123456789"));
 	}
 
 }

@@ -26,8 +26,7 @@ public class WorkerService {
 		if (worker.isPresent()) {
 			return worker.get();
 		}
-		
-		throw new IllegalArgumentException("ID no found: " + id.toString());
+		return null;
 	}
 
 }

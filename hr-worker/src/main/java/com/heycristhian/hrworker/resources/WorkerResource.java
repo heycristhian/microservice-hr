@@ -49,6 +49,9 @@ public class WorkerResource {
 	public ResponseEntity<Worker> findById(@PathVariable Long id) {
 		logger.info("PORT: " + env.getProperty("local.server.port"));
 		Worker worker = service.findById(id);
+		if (worker == null) {
+			return ResponseEntity.notFound().build();
+		}
 		return ResponseEntity.ok(worker);
 	}
 
